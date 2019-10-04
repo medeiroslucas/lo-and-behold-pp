@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int a[100000][2];
+int a[200005][2];
 
 int main(){
 
