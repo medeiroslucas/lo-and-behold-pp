@@ -1,3 +1,12 @@
+/*
+ *	 author:
+ *	   team: Lo and Behold ++
+ *	created:
+ *	contest:
+ *	problem:
+ *	 solved: False
+*/
+
 #include <bits/stdc++.h>
 
 #define DEBUG false
