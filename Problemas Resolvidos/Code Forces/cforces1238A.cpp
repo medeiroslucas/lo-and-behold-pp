@@ -1,7 +1,7 @@
 /*
- *	 author: esh2900
+ *	 author: lucas_medeiros - github.com/medeiroslucas
  *	   team: Lo and Behold ++
- *	created: 08-10-2019 11:32:38
+ *	created: 08-10-2019 11:33:11
  *	contest: 1238
  *	problem: A
  *	 solved: True
@@ -28,13 +28,22 @@ const double EPS = 1e-9;
 
 int main(){
 	ios_base::sync_with_stdio(false);	
-	int N;
-	cin >> N;
-	for(int i=0;i<N;i++){
-		ll a,b;
-		cin >> a >> b;
-		if(a-b==1) cout << "NO" << endl;
-		else cout << "YES" << endl;
+
+	int t;
+
+	cin >> t;
+
+	while(t--){
+
+		ll x, y;
+
+		cin >> x >> y;
+
+		if(abs(x-y) <= 1){
+			cout << "NO" << endl;
+		}else{
+			cout << "YES" << endl;
+		}
 	}
 
 	return 0;

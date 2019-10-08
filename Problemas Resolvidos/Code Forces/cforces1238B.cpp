@@ -1,7 +1,7 @@
 /*
- *	 author: esh2900
+ *	 author: lucas_medeiros - github.com/medeiroslucas
  *	   team: Lo and Behold ++
- *	created: 08-10-2019 11:32:41
+ *	created: 08-10-2019 11:50:24
  *	contest: 1238
  *	problem: B
  *	 solved: True
@@ -28,31 +28,33 @@ const double EPS = 1e-9;
 
 int main(){
 	ios_base::sync_with_stdio(false);	
-	
-	int N;
-	cin >> N;
-	
-	for(int i=0;i<N;i++){
-		vector<int>aux;
-		int m,k;
-		cin >> m >> k;
-		int a;
-		for(int j=0;j<m;j++){
-			cin >> a;
-			aux.push_back(a);
-		}
-		sort(aux.begin(),aux.end());
-		int j,K;
-		for(j=aux.size()-1,K=0;aux[j]>k*K and j>=0;j--,K++){
-				while(aux[j]==aux[j-1]){
-					j--;
-					if(j==0) break;
-				}
-		}
 
-		cout << K << endl;
+	int q;
+
+	cin >> q;
+
+	while(q--){
+
+		int n, r;
+
+		cin >> n >> r;
+
+		vi num(n);
+
+		for(int i=0; i<n; i++) cin >> num[i];
+		sort(num.begin(), num.end());
+
+		int i, j;
+		for(i=n-1, j=0; num[i]>r*j and i>=0; i--, j++){
+			if(i >= 1){
+				while(num[i] == num[i-1]){
+					i--;
+					if(!i) break;
+				}	
+			}
+		}
+		cout << j << endl;
 	}
-
 
 	return 0;
 }

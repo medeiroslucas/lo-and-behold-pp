@@ -4,7 +4,7 @@
  *	created: 08-10-2019 11:50:24
  *	contest: 1238
  *	problem: B
- *	 solved: False
+ *	 solved: True
 */
 
 #include <bits/stdc++.h>
